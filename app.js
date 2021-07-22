@@ -31,3 +31,13 @@ const config = require("./dynamo/config");
 })();
 
 const web_server = require("http").createServer(app).listen(8081);
+const web_socket = require("./socket-server");
+
+web_socket.io.attach(web_server, {
+    cors: {
+        origin: "*",
+        methods: ["GET", "POST"],
+    },
+});
+
+web_socket.init();
