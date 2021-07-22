@@ -1,0 +1,16 @@
+{
+    "name": "cassandra-app",
+    "main": "app.js",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "nodemon --exec app.js"
+    },
+    "dependencies": {
+        "aws-sdk": "^2.951.0",
+        "compression": "^1.7.4",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "socket.io": "^4.1.3"
+    }
+}
